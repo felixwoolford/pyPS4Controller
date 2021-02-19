@@ -247,7 +247,7 @@ class Controller(Actions):
 
         def unpack():
             __event = struct.unpack(self.event_format, event)
-            return (__event[3:], __event[2], __event[1], __event[0])
+            return (__event[3:], __event[3], __event[1], __event[0])
 
         wait_for_interface()
         try:
